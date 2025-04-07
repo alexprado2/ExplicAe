@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Aprenda Python - Conceitos e Tutorial</title>
+    <link rel="stylesheet" href="../assets/styles/phyton/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#python-intro">Introdução</a></li>
+                    <li><a href="#video">Tutorial</a></li>
+                    <li><a href="#exemplos">Exemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Python: A Linguagem de Programação Versátil</h1>
+            <p>Aprenda os fundamentos do Python, uma das linguagens de programação mais populares e fáceis de aprender do mundo.</p>
+            <a href="#python-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="python-intro" id="python-intro">
+        <div class="container">
+            <h2 class="section-title">O que é Python?</h2>
+            <div class="texto-introducao">
+                <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.</p>
+                <p>Python é conhecida por sua simplicidade e legibilidade, o que a torna uma excelente escolha para iniciantes em programação. Com sua sintaxe clara e direta, permite que os desenvolvedores se concentrem na resolução de problemas em vez de se preocupar com detalhes complexos da linguagem.</p>
+                <p>Características principais do Python:</p>
+                <ul>
+                    <li>Sintaxe clara e legível</li>
+                    <li>Tipagem dinâmica</li>
+                    <li>Interpretada</li>
+                    <li>Orientada a objetos</li>
+                    <li>Ampla biblioteca padrão</li>
+                    <li>Comunidade ativa e grande ecossistema</li>
+                </ul>
+                <p>Python tem ganhado popularidade em diversas áreas como ciência de dados, inteligência artificial, desenvolvimento web, automação, e muito mais. Sua versatilidade a torna uma ferramenta poderosa para praticamente qualquer tipo de projeto de software.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Tutorial em Vídeo</h2>
+            <p>Aprenda Python com este tutorial introdutório:</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    Aqui seria inserido um vídeo tutorial sobre Python<br>
+                    (Este é um espaço reservado para o vídeo)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exemplos" id="exemplos">
+        <div class="container">
+            <h2 class="section-title">Exemplos de Código Python</h2>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <h3>Olá Mundo</h3>
+                    <div class="code-block">
+                        <pre>
+# Meu primeiro programa em Python
+print("Olá, Mundo!")
+                        </pre>
+                    </div>
+                    <p>Este é o exemplo mais básico de um programa Python. A função <code>print()</code> exibe o texto "Olá, Mundo!" no console.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Variáveis e Tipos de Dados</h3>
+                    <div class="code-block">
+                        <pre>
+# Variáveis em Python
+nome = "Maria"  # string
+idade = 25      # inteiro
+altura = 1.65   # float
+estudante = True  # boolean
+
+print(f"Nome: {nome}, Idade: {idade}, Altura: {altura}m, Estudante: {estudante}")
+                        </pre>
+                    </div>
+                    <p>Python suporta vários tipos de dados como strings, números e booleanos. Você não precisa declarar o tipo da variável explicitamente.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Estruturas de Controle</h3>
+                    <div class="code-block">
+                        <pre>
+# Estrutura condicional (if-else)
+idade = 18
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+
+# Loop for
+print("Contando de 1 a 5:")
+for i in range(1, 6):
+    print(i)
+                        </pre>
+                    </div>
+                    <p>Python oferece estruturas de controle como if-else para tomada de decisão e loops para repetição de código.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Funções</h3>
+                    <div class="code-block">
+                        <pre>
+# Definindo uma função
+def saudacao(nome):
+    return f"Olá, {nome}! Bem-vindo ao Python!"
+
+# Chamando a função
+mensagem = saudacao("Carlos")
+print(mensagem)
+
+# Função com parâmetros padrão
+def soma(a, b=0):
+    return a + b
+
+print(soma(5, 3))  # 8
+print(soma(5))     # 5
+                        </pre>
+                    </div>
+                    <p>Funções são blocos de código reutilizáveis que realizam tarefas específicas. Você pode definir funções com parâmetros e valores padrão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Aprender Python</h2>
+            <div class="recursos-list">
+                <div class="recurso-card">
+                    <h3>Documentação Oficial</h3>
+                    <p>A documentação oficial do Python é um recurso excelente e completo para aprender a linguagem.</p>
+                    <a href="#" class="btn">Visitar</a>
+                </div>
+                <div class="recurso-card">
+                    <h3>Exercícios Práticos</h3>
+                    <p>Pratique seus conhecimentos com nossa série de exercícios progressivos em Python.</p>
+                    <a href="#" class="btn">Começar</a>
+                </div>
+                <div class="recurso-card">
+                    <h3>Projetos para Iniciantes</h3>
+                    <p>Aprenda construindo projetos reais desde o início até aplicações completas.</p>
+                    <a href="#" class="btn">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/phyton/scripts/script.js"></script>
+</body>
+</html>
