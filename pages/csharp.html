@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Aprenda C# - Conceitos e Tutorial</title>
+    <link rel="stylesheet" href="../assets/styles/pages/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#csharp-intro">Introdução</a></li>
+                    <li><a href="#video">Tutorial</a></li>
+                    <li><a href="#exemplos">Exemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>C#: A Linguagem de Programação Moderna da Microsoft</h1>
+            <p>Aprenda os fundamentos do C#, uma linguagem de programação poderosa, orientada a objetos e desenvolvida pela Microsoft.</p>
+            <a href="#csharp-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="csharp-intro" id="csharp-intro">
+        <div class="container">
+            <h2 class="section-title">O que é C#?</h2>
+            <div class="texto-introducao">
+                <p>C# (C Sharp) é uma linguagem de programação moderna, orientada a objetos, fortemente tipada e de alto nível, desenvolvida pela Microsoft como parte da plataforma .NET. Foi lançada no ano 2000 e criada por Anders Hejlsberg.</p>
+                <p>C# é conhecida por sua robustez, segurança de tipos e capacidade de desenvolver aplicações empresariais escaláveis. Ela combina a produtividade de linguagens de alto nível com o poder de controle de linguagens de baixo nível.</p>
+                <p>Características principais do C#:</p>
+                <ul>
+                    <li>Orientação a objetos</li>
+                    <li>Fortemente tipada</li>
+                    <li>Compilada</li>
+                    <li>Gerenciamento automático de memória (garbage collection)</li>
+                    <li>Integração com a plataforma .NET</li>
+                    <li>Suporte a programação assíncrona</li>
+                </ul>
+                <p>C# é amplamente utilizada no desenvolvimento de aplicativos Windows, aplicações web com ASP.NET, jogos com Unity, aplicativos móveis com Xamarin, e muito mais. Sua versatilidade e suporte corporativo da Microsoft a tornam uma escolha excelente para diversos tipos de projetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Tutorial em Vídeo</h2>
+            <p>Aprenda C# com este tutorial introdutório:</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/WyUsmfbFqbI" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exemplos" id="exemplos">
+        <div class="container">
+            <h2 class="section-title">Exemplos de Código C#</h2>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <h3>Olá Mundo</h3>
+                    <div class="code-block">
+                        <pre>
+// Meu primeiro programa em C#
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Olá, Mundo!");
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Este é o exemplo mais básico de um programa C#. O método <code>Console.WriteLine()</code> exibe o texto "Olá, Mundo!" no console.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Variáveis e Tipos de Dados</h3>
+                    <div class="code-block">
+                        <pre>
+// Variáveis em C#
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nome = "Maria";  // string
+        int idade = 25;         // inteiro
+        double altura = 1.65;   // double
+        bool estudante = true;  // boolean
+
+        Console.WriteLine($"Nome: {nome}, Idade: {idade}, Altura: {altura}m, Estudante: {estudante}");
+    }
+}
+                        </pre>
+                    </div>
+                    <p>C# é uma linguagem fortemente tipada, o que significa que você precisa declarar o tipo de cada variável. Isso ajuda a prevenir erros e melhora a performance.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Estruturas de Controle</h3>
+                    <div class="code-block">
+                        <pre>
+// Estrutura condicional (if-else)
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int idade = 18;
+
+        if (idade >= 18)
+        {
+            Console.WriteLine("Você é maior de idade.");
+        }
+        else
+        {
+            Console.WriteLine("Você é menor de idade.");
+        }
+
+        // Loop for
+        Console.WriteLine("Contando de 1 a 5:");
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+                        </pre>
+                    </div>
+                    <p>C# oferece estruturas de controle como if-else para tomada de decisão e loops para repetição de código, semelhantes a outras linguagens C-style.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Métodos</h3>
+                    <div class="code-block">
+                        <pre>
+// Definindo métodos
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string mensagem = Saudacao("Carlos");
+        Console.WriteLine(mensagem);
+
+        Console.WriteLine(Soma(5, 3));  // 8
+        Console.WriteLine(Soma(5));     // 5
+    }
+
+    static string Saudacao(string nome)
+    {
+        return $"Olá, {nome}! Bem-vindo ao C#!";
+    }
+
+    // Método com parâmetros opcionais
+    static int Soma(int a, int b = 0)
+    {
+        return a + b;
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Em C#, métodos são blocos de código reutilizáveis que realizam tarefas específicas. Você pode definir métodos com parâmetros e valores padrão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Aprender C#</h2>
+            <div class="recursos-list">
+                <div class="recurso-card">
+                    <h3>Documentação Oficial</h3>
+                    <p>A documentação oficial para C# é um recurso excelente e completo para aprender a linguagem.</p>
+                    <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/" class="btn">Visitar</a>
+                </div>
+                <div class="recurso-card">
+                    <h3>Exercícios Práticos</h3>
+                    <p>Pratique seus conhecimentos com nossa série de exercícios progressivos em C#.</p>
+                    <a href="https://exercism.org/tracks/csharp" class="btn">Começar</a>
+                </div>
+                <!-- <div class="recurso-card">
+                    <h3>Projetos para Iniciantes</h3>
+                    <p>Aprenda construindo projetos reais desde o início até aplicações completas.</p>
+                    <a href="#" class="btn">Explorar</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/pages/scripts/script.js"></script>
+</body>
+</html>

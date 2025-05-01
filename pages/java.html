@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Aprenda Java - Conceitos e Tutorial</title>
+    <link rel="stylesheet" href="../assets/styles/pages/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#java-intro">Introdução</a></li>
+                    <li><a href="#video">Tutorial</a></li>
+                    <li><a href="#exemplos">Exemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Java: A Linguagem de Programação Multiplataforma</h1>
+            <p>Aprenda os fundamentos do Java, uma linguagem de programação robusta, orientada a objetos e desenvolvida pela Oracle (anteriormente Sun Microsystems).</p>
+            <a href="#java-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="java-intro" id="java-intro">
+        <div class="container">
+            <h2 class="section-title">O que é Java?</h2>
+            <div class="texto-introducao">
+                <p>Java é uma linguagem de programação orientada a objetos, multiplataforma e de alto nível, desenvolvida pela Sun Microsystems (agora pertencente à Oracle). Foi lançada oficialmente em 1995 e criada por James Gosling.</p>
+                <p>Java é conhecida pelo seu slogan "Write Once, Run Anywhere" (Escreva uma vez, execute em qualquer lugar), graças à sua capacidade de funcionar em diferentes plataformas sem recompilação. Isso é possível devido à Máquina Virtual Java (JVM).</p>
+                <p>Características principais do Java:</p>
+                <ul>
+                    <li>Orientação a objetos</li>
+                    <li>Multiplataforma (independente de plataforma)</li>
+                    <li>Fortemente tipada</li>
+                    <li>Gerenciamento automático de memória (garbage collection)</li>
+                    <li>Rico ecossistema de bibliotecas</li>
+                    <li>Suporte a programação concorrente</li>
+                </ul>
+                <p>Java é amplamente utilizada no desenvolvimento de aplicações empresariais, aplicativos Android, sistemas embarcados, aplicações web com frameworks como Spring, desenvolvimento de jogos, e muito mais. Sua estabilidade, segurança e comunidade ativa a tornam uma escolha excelente para diversos tipos de projetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Tutorial em Vídeo</h2>
+            <p>Aprenda Java com este tutorial introdutório:</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/xk4_1vDrzzo" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exemplos" id="exemplos">
+        <div class="container">
+            <h2 class="section-title">Exemplos de Código Java</h2>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <h3>Olá Mundo</h3>
+                    <div class="code-block">
+                        <pre>
+// Meu primeiro programa em Java
+public class OlaMundo {
+    public static void main(String[] args) {
+        System.out.println("Olá, Mundo!");
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Este é o exemplo mais básico de um programa Java. O método <code>System.out.println()</code> exibe o texto "Olá, Mundo!" no console.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Variáveis e Tipos de Dados</h3>
+                    <div class="code-block">
+                        <pre>
+// Variáveis em Java
+public class Variaveis {
+    public static void main(String[] args) {
+        String nome = "Maria";    // string
+        int idade = 25;          // inteiro
+        double altura = 1.65;    // double
+        boolean estudante = true; // boolean
+
+        System.out.println("Nome: " + nome + ", Idade: " + idade + 
+                          ", Altura: " + altura + "m, Estudante: " + estudante);
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Java é uma linguagem fortemente tipada, o que significa que você precisa declarar o tipo de cada variável. Isso ajuda a prevenir erros e melhora a performance.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Estruturas de Controle</h3>
+                    <div class="code-block">
+                        <pre>
+// Estrutura condicional (if-else)
+public class EstruturasControle {
+    public static void main(String[] args) {
+        int idade = 18;
+
+        if (idade >= 18) {
+            System.out.println("Você é maior de idade.");
+        } else {
+            System.out.println("Você é menor de idade.");
+        }
+
+        // Loop for
+        System.out.println("Contando de 1 a 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Java oferece estruturas de controle como if-else para tomada de decisão e loops para repetição de código, semelhantes a outras linguagens baseadas em C.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Métodos</h3>
+                    <div class="code-block">
+                        <pre>
+// Definindo métodos
+public class Metodos {
+    public static void main(String[] args) {
+        String mensagem = saudacao("Carlos");
+        System.out.println(mensagem);
+
+        System.out.println(soma(5, 3));  // 8
+        System.out.println(soma(5));     // 5
+    }
+
+    static String saudacao(String nome) {
+        return "Olá, " + nome + "! Bem-vindo ao Java!";
+    }
+
+    // Método com sobrecarga
+    static int soma(int a, int b) {
+        return a + b;
+    }
+    
+    static int soma(int a) {
+        return a;
+    }
+}
+                        </pre>
+                    </div>
+                    <p>Em Java, métodos são blocos de código reutilizáveis que realizam tarefas específicas. Java suporta sobrecarga de métodos, que permite definir múltiplos métodos com o mesmo nome mas diferentes parâmetros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Aprender Java</h2>
+            <div class="recursos-list">
+                <div class="recurso-card">
+                    <h3>Documentação Oficial</h3>
+                    <p>A documentação oficial para Java é um recurso excelente e completo para aprender a linguagem.</p>
+                    <a href="https://docs.oracle.com/javase/tutorial/" class="btn">Visitar</a>
+                </div>
+                <div class="recurso-card">
+                    <h3>Exercícios Práticos</h3>
+                    <p>Pratique seus conhecimentos com nossa série de exercícios progressivos em Java.</p>
+                    <a href="https://exercism.org/tracks/java" class="btn">Começar</a>
+                </div>
+                <!-- <div class="recurso-card">
+                    <h3>Projetos para Iniciantes</h3>
+                    <p>Aprenda construindo projetos reais desde o início até aplicações completas.</p>
+                    <a href="#" class="btn">Explorar</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/pages/scripts/script.js"></script>
+</body>
+</html>

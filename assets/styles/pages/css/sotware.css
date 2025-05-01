@@ -1,0 +1,217 @@
+.processo-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.processo-timeline::before {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #e0e0e0;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    min-width: 120px;
+    margin-bottom: 20px;
+}
+
+.timeline-icon {
+    width: 46px;
+    height: 46px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    font-size: 18px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.timeline-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.timeline-item.active .timeline-icon {
+    background-color: #4a6ee0;
+    color: white;
+    border-color: #4a6ee0;
+    box-shadow: 0 0 0 4px rgba(74, 110, 224, 0.2);
+}
+
+.timeline-item.active .timeline-label {
+    color: #4a6ee0;
+    font-weight: 600;
+}
+
+.timeline-item:hover .timeline-icon {
+    transform: scale(1.1);
+}
+
+/* Cards de conteúdo das fases */
+.fases-conteudo {
+    margin-top: 30px;
+}
+
+.fase-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    display: none;
+}
+
+.fase-card.active {
+    display: block;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fase-header {
+    background: #f5f7ff;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fase-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.fase-indicador {
+    background: #e0e6ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #4a6ee0;
+    font-weight: 500;
+}
+
+.fase-body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fase-descricao {
+    flex: 1;
+    min-width: 300px;
+}
+
+.fase-exemplo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.fase-exemplo h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.destaques-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.destaque-item {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.destaque-item .icone {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.code-block {
+    background: #f8f9fa;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.code-block::before {
+    content: 'Código';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e0e6ff;
+    color: #4a6ee0;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-bottom-left-radius: 6px;
+}
+
+.code-block pre {
+    padding: 20px;
+    overflow-x: auto;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .processo-timeline {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+    }
+    
+    .timeline-item {
+        flex: 0 0 120px;
+    }
+    
+    .fase-body {
+        flex-direction: column;
+    }
+    
+    .destaques-lista {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .destaques-lista {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-label {
+        font-size: 12px;
+    }
+}

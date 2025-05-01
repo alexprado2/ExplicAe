@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Desenvolvimento de Software - Conceitos e Boas Práticas</title>
+    <link rel="stylesheet" href="../assets/styles/pages/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#dev-intro">Introdução</a></li>
+                    <li><a href="#ciclo-vida">Ciclo de Vida</a></li>
+                    <li><a href="#metodologias">Metodologias</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Desenvolvimento de Software: Arte e Ciência da Criação Digital</h1>
+            <p>Aprenda os fundamentos, metodologias e boas práticas para criar aplicações de software eficientes, escaláveis e de alta qualidade.</p>
+            <a href="#dev-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="dev-intro" id="dev-intro">
+        <div class="container">
+            <h2 class="section-title">O que é Desenvolvimento de Software?</h2>
+            <div class="texto-introducao">
+                <p>O desenvolvimento de software é o processo sistemático de criação, design, programação, documentação, teste e manutenção de aplicações e sistemas de software. É uma combinação de disciplina técnica, arte criativa e engenharia de processos.</p>
+                <p>Este campo abrange desde a concepção inicial da ideia até a entrega e manutenção contínua do produto final, exigindo colaboração entre diferentes especialistas, como desenvolvedores, designers, analistas de negócios e especialistas em qualidade.</p>
+                <p>Principais aspectos do desenvolvimento de software:</p>
+                <ul>
+                    <li>Análise de requisitos e planejamento</li>
+                    <li>Design de arquitetura e interface</li>
+                    <li>Codificação e implementação</li>
+                    <li>Testes e garantia de qualidade</li>
+                    <li>Implantação e manutenção</li>
+                    <li>Documentação técnica</li>
+                </ul>
+                <p>O desenvolvimento de software moderno é caracterizado por constante evolução tecnológica, metodologias ágeis, práticas DevOps, e crescente foco em segurança, escalabilidade e experiência do usuário. Profissionais desta área precisam estar em constante aprendizado para acompanhar as novas tecnologias e tendências do mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ciclo-vida" id="ciclo-vida">
+        <div class="container">
+            <h2 class="section-title">Ciclo de Vida do Desenvolvimento de Software</h2>
+            
+            <!-- Timeline visual do processo -->
+            <div class="processo-timeline">
+                <div class="timeline-item active" data-target="requisitos">
+                    <div class="timeline-icon">1</div>
+                    <div class="timeline-label">Análise de Requisitos</div>
+                </div>
+                <div class="timeline-item" data-target="design">
+                    <div class="timeline-icon">2</div>
+                    <div class="timeline-label">Design e Arquitetura</div>
+                </div>
+                <div class="timeline-item" data-target="implementacao">
+                    <div class="timeline-icon">3</div>
+                    <div class="timeline-label">Implementação</div>
+                </div>
+                <div class="timeline-item" data-target="testes">
+                    <div class="timeline-icon">4</div>
+                    <div class="timeline-label">Testes</div>
+                </div>
+                <div class="timeline-item" data-target="implantacao">
+                    <div class="timeline-icon">5</div>
+                    <div class="timeline-label">Implantação</div>
+                </div>
+                <div class="timeline-item" data-target="manutencao">
+                    <div class="timeline-icon">6</div>
+                    <div class="timeline-label">Manutenção</div>
+                </div>
+            </div>
+    
+            <!-- Conteúdo detalhado de cada fase -->
+            <div class="fases-conteudo">
+                <!-- Fase 1: Análise de Requisitos -->
+                <div class="fase-card active" id="requisitos">
+                    <div class="fase-header">
+                        <h3>Análise de Requisitos</h3>
+                        <div class="fase-indicador">Fase 1 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>A fase de análise de requisitos envolve coletar, documentar e validar as necessidades dos usuários e stakeholders do projeto. É fundamental para garantir que o software atenda às expectativas do cliente.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">📋</span> Levantamento de requisitos</div>
+                                <div class="destaque-item"><span class="icone">🔍</span> Análise de viabilidade</div>
+                                <div class="destaque-item"><span class="icone">📊</span> Priorização de funcionalidades</div>
+                                <div class="destaque-item"><span class="icone">✅</span> Definição de critérios de aceitação</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de documento de requisitos</h4>
+                            <div class="code-block">
+                                <pre>
+    REQUISITO #001: Sistema de Login
+    Descrição: O sistema deve permitir que usuários se autentiquem
+    Critérios de aceitação:
+    - Entrada para e-mail e senha
+    - Validação de formato de e-mail
+    - Tentativas máximas de login (3)
+    - Recuperação de senha
+    - Autenticação por dois fatores (opcional)
+    Prioridade: Alta
+    Stakeholders: Equipe de segurança, usuários finais
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fase 2: Design e Arquitetura -->
+                <div class="fase-card" id="design">
+                    <div class="fase-header">
+                        <h3>Design e Arquitetura</h3>
+                        <div class="fase-indicador">Fase 2 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>Na fase de design, são definidas a arquitetura do sistema, os componentes, interfaces e estruturas de dados. Decisões tomadas nesta fase afetam diretamente a qualidade, manutenibilidade e escalabilidade do software.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">🏗️</span> Arquitetura de software</div>
+                                <div class="destaque-item"><span class="icone">🔄</span> Padrões de design</div>
+                                <div class="destaque-item"><span class="icone">🖼️</span> Design de interface</div>
+                                <div class="destaque-item"><span class="icone">🗃️</span> Modelagem de dados</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de padrão de design</h4>
+                            <div class="code-block">
+                                <pre>
+    /* Exemplo de Design Pattern - Singleton */
+    // Garante que uma classe tenha apenas uma instância
+    public class BancoDeDados
+    {
+        private static BancoDeDados _instancia;
+        private string _stringConexao;
+        
+        private BancoDeDados()
+        {
+            _stringConexao = "Server=myServerAddress;Database=myDB;";
+        }
+        
+        public static BancoDeDados ObterInstancia()
+        {
+            if (_instancia == null)
+            {
+                _instancia = new BancoDeDados();
+            }
+            return _instancia;
+        }
+        
+        public void Conectar()
+        {
+            // Código para conectar ao banco de dados
+        }
+    }
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fase 3: Implementação -->
+                <div class="fase-card" id="implementacao">
+                    <div class="fase-header">
+                        <h3>Implementação</h3>
+                        <div class="fase-indicador">Fase 3 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>A implementação é a fase onde o código é efetivamente escrito com base nas especificações de design. Envolve escolha de linguagens de programação, frameworks e bibliotecas adequadas para o projeto.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">💻</span> Codificação</div>
+                                <div class="destaque-item"><span class="icone">🔧</span> Uso de frameworks</div>
+                                <div class="destaque-item"><span class="icone">📚</span> Integração de bibliotecas</div>
+                                <div class="destaque-item"><span class="icone">🔄</span> Controle de versão</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de implementação de funcionalidade</h4>
+                            <div class="code-block">
+                                <pre>
+    // Exemplo de implementação de uma funcionalidade
+    public class GerenciadorDeUsuarios
+    {
+        private readonly IRepositorioUsuarios _repositorio;
+        private readonly IServicoEmail _servicoEmail;
+        
+        public GerenciadorDeUsuarios(
+            IRepositorioUsuarios repositorio,
+            IServicoEmail servicoEmail)
+        {
+            _repositorio = repositorio;
+            _servicoEmail = servicoEmail;
+        }
+        
+        public async Task<bool> CriarUsuario(UsuarioDto usuario)
+        {
+            // Validação de dados
+            if (string.IsNullOrEmpty(usuario.Email))
+            {
+                throw new ArgumentException("Email é obrigatório");
+            }
+            
+            // Verifica se usuário já existe
+            if (await _repositorio.ExisteUsuarioPorEmail(usuario.Email))
+            {
+                return false;
+            }
+            
+            // Cria usuário no banco
+            var id = await _repositorio.AdicionarUsuario(usuario);
+            
+            // Envia email de boas-vindas
+            await _servicoEmail.EnviarEmailBoasVindas(usuario.Email);
+            
+            return true;
+        }
+    }
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fase 4: Testes -->
+                <div class="fase-card" id="testes">
+                    <div class="fase-header">
+                        <h3>Testes</h3>
+                        <div class="fase-indicador">Fase 4 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>A fase de testes é crucial para garantir a qualidade do software. Inclui testes unitários, integração, sistema e aceitação, visando identificar e corrigir defeitos antes da entrega ao cliente.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">🧪</span> Testes unitários</div>
+                                <div class="destaque-item"><span class="icone">🔄</span> Testes de integração</div>
+                                <div class="destaque-item"><span class="icone">🖥️</span> Testes de sistema</div>
+                                <div class="destaque-item"><span class="icone">👥</span> Testes de aceitação</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de teste unitário</h4>
+                            <div class="code-block">
+                                <pre>
+    // Exemplo de teste unitário usando xUnit
+    public class GerenciadorDeUsuariosTests
+    {
+        [Fact]
+        public async Task CriarUsuario_ComEmailInvalido_DeveLancarExcecao()
+        {
+            // Arrange
+            var repositorioMock = new Mock<IRepositorioUsuarios>();
+            var servicoEmailMock = new Mock<IServicoEmail>();
+            var gerenciador = new GerenciadorDeUsuarios(
+                repositorioMock.Object, 
+                servicoEmailMock.Object);
+            
+            var usuarioSemEmail = new UsuarioDto 
+            { 
+                Nome = "Teste",
+                Email = ""
+            };
+            
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentException>(
+                async () => await gerenciador.CriarUsuario(usuarioSemEmail)
+            );
+        }
+        
+        [Fact]
+        public async Task CriarUsuario_QuandoSucesso_DeveRetornarTrue()
+        {
+            // Arrange
+            var repositorioMock = new Mock<IRepositorioUsuarios>();
+            var servicoEmailMock = new Mock<IServicoEmail>();
+            
+            repositorioMock
+                .Setup(r => r.ExisteUsuarioPorEmail(It.IsAny<string>()))
+                .ReturnsAsync(false);
+                
+            var gerenciador = new GerenciadorDeUsuarios(
+                repositorioMock.Object, 
+                servicoEmailMock.Object);
+            
+            var novoUsuario = new UsuarioDto 
+            { 
+                Nome = "Maria Silva",
+                Email = "maria@exemplo.com"
+            };
+            
+            // Act
+            var resultado = await gerenciador.CriarUsuario(novoUsuario);
+            
+            // Assert
+            Assert.True(resultado);
+            repositorioMock.Verify(
+                r => r.AdicionarUsuario(It.IsAny<UsuarioDto>()), 
+                Times.Once
+            );
+            servicoEmailMock.Verify(
+                s => s.EnviarEmailBoasVindas("maria@exemplo.com"), 
+                Times.Once
+            );
+        }
+    }
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fase 5: Implantação -->
+                <div class="fase-card" id="implantacao">
+                    <div class="fase-header">
+                        <h3>Implantação</h3>
+                        <div class="fase-indicador">Fase 5 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>A fase de implantação envolve colocar o software em produção, configurar ambientes, migrar dados e treinar usuários finais para a utilização do sistema.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">🚀</span> Deployment em produção</div>
+                                <div class="destaque-item"><span class="icone">⚙️</span> Configuração de ambientes</div>
+                                <div class="destaque-item"><span class="icone">📊</span> Migração de dados</div>
+                                <div class="destaque-item"><span class="icone">👩‍🏫</span> Treinamento de usuários</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de script de deploy</h4>
+                            <div class="code-block">
+                                <pre>
+    #!/bin/bash
+    # Script de implantação automatizada
+    
+    echo "Iniciando deploy da versão 2.5.1..."
+    
+    # Backup dos dados
+    echo "Realizando backup do banco de dados..."
+    pg_dump -U postgres -d aplicacao_prod > backup_$(date +%Y%m%d).sql
+    
+    # Parar serviços
+    echo "Parando serviços..."
+    systemctl stop aplicacao-api
+    systemctl stop aplicacao-worker
+    
+    # Atualizar código
+    echo "Atualizando código fonte..."
+    cd /var/www/aplicacao
+    git pull origin main
+    npm install --production
+    
+    # Executar migrações
+    echo "Executando migrações do banco de dados..."
+    npm run migrate:up
+    
+    # Reiniciar serviços
+    echo "Reiniciando serviços..."
+    systemctl start aplicacao-api
+    systemctl start aplicacao-worker
+    
+    echo "Verificando status dos serviços..."
+    systemctl status aplicacao-api | grep Active
+    systemctl status aplicacao-worker | grep Active
+    
+    echo "Deploy concluído com sucesso!"
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fase 6: Manutenção -->
+                <div class="fase-card" id="manutencao">
+                    <div class="fase-header">
+                        <h3>Manutenção</h3>
+                        <div class="fase-indicador">Fase 6 de 6</div>
+                    </div>
+                    <div class="fase-body">
+                        <div class="fase-descricao">
+                            <p>A fase de manutenção garante que o software continue funcionando corretamente, seja atualizado com novas funcionalidades e corrigido quando necessário ao longo de seu ciclo de vida.</p>
+                            <div class="destaques-lista">
+                                <div class="destaque-item"><span class="icone">🔧</span> Manutenção corretiva</div>
+                                <div class="destaque-item"><span class="icone">⚡</span> Manutenção preventiva</div>
+                                <div class="destaque-item"><span class="icone">🚀</span> Manutenção evolutiva</div>
+                                <div class="destaque-item"><span class="icone">📊</span> Monitoramento contínuo</div>
+                            </div>
+                        </div>
+                        <div class="fase-exemplo">
+                            <h4>Exemplo de log de monitoramento</h4>
+                            <div class="code-block">
+                                <pre>
+    // Configuração de logger para monitoramento de erros
+    const winston = require('winston');
+    const Sentry = require('@sentry/node');
+    
+    // Inicializar Sentry para monitoramento de erros
+    Sentry.init({
+      dsn: "https://ab12c3de45f@sentry.io/98765",
+      environment: process.env.NODE_ENV,
+      tracesSampleRate: 0.5,
+    });
+    
+    // Configurar logger
+    const logger = winston.createLogger({
+      level: 'info',
+      format: winston.format.combine(
+        winston.format.timestamp(),
+        winston.format.json()
+      ),
+      defaultMeta: { service: 'api-users' },
+      transports: [
+        new winston.transports.File({ 
+          filename: 'error.log', 
+          level: 'error' 
+        }),
+        new winston.transports.File({ 
+          filename: 'combined.log' 
+        }),
+      ],
+    });
+    
+    // Monitoramento de API
+    app.use((req, res, next) => {
+      const start = Date.now();
+      
+      res.on('finish', () => {
+        const duration = Date.now() - start;
+        logger.info({
+          method: req.method,
+          path: req.path,
+          statusCode: res.statusCode,
+          duration,
+        });
+        
+        // Alertar sobre respostas lentas
+        if (duration > 1000) {
+          logger.warn({
+            message: 'Resposta lenta detectada',
+            method: req.method,
+            path: req.path,
+            duration,
+          });
+        }
+      });
+      
+      next();
+    });
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="metodologias" id="metodologias">
+        <div class="container">
+            <h2 class="section-title">Metodologias de Desenvolvimento</h2>
+            <div class="metodologias-grid">
+                <div class="metodologia-card">
+                    <h3>Cascata (Waterfall)</h3>
+                    <p>Modelo linear e sequencial, onde cada fase do desenvolvimento deve ser concluída antes de iniciar a próxima. É mais adequado para projetos com requisitos bem definidos e estáveis.</p>
+                    <ul>
+                        <li>Fases bem delimitadas</li>
+                        <li>Documentação extensa</li>
+                        <li>Pouca flexibilidade para mudanças</li>
+                        <li>Cliente vê o produto apenas no final</li>
+                    </ul>
+                </div>
+                <div class="metodologia-card">
+                    <h3>Ágil (Scrum, Kanban)</h3>
+                    <p>Abordagem iterativa e incremental que prioriza entrega contínua de valor, adaptação a mudanças e colaboração próxima com o cliente.</p>
+                    <ul>
+                        <li>Entregas frequentes</li>
+                        <li>Adaptação constante</li>
+                        <li>Equipes auto-organizadas</li>
+                        <li>Foco no cliente e no produto funcional</li>
+                        <li>Melhoria contínua através de retrospectivas</li>
+                    </ul>
+                </div>
+                <div class="metodologia-card">
+                    <h3>DevOps</h3>
+                    <p>Combina desenvolvimento (Dev) e operações (Ops) para encurtar o ciclo de vida de desenvolvimento e fornecer entrega contínua com alta qualidade.</p>
+                    <ul>
+                        <li>Integração e entrega contínuas (CI/CD)</li>
+                        <li>Automação de processos</li>
+                        <li>Monitoramento e feedback contínuo</li>
+                        <li>Cultura de colaboração</li>
+                        <li>Infraestrutura como código</li>
+                    </ul>
+                </div>
+                <div class="metodologia-card">
+                    <h3>Desenvolvimento Orientado a Testes (TDD)</h3>
+                    <p>Abordagem que prioriza a escrita de testes antes da implementação do código, seguindo o ciclo: escrever teste, falhar, implementar, passar, refatorar.</p>
+                    <ul>
+                        <li>Testes como especificação</li>
+                        <li>Código mais limpo e manutenível</li>
+                        <li>Feedback rápido sobre bugs</li>
+                        <li>Design centrado no uso (interface)</li>
+                        <li>Cobertura de testes garantida</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Tutorial em Vídeo</h2>
+            <p>Aprenda sobre o processo de desenvolvimento de software neste vídeo introdutório:</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/PtB6Vv4-rBI" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Desenvolvimento de Software</h2>
+            <div class="recursos-list">
+                <div class="recurso-card">
+                    <h3>Livros Recomendados</h3>
+                    <p>Conheça os clássicos e obras atuais que todo desenvolvedor deveria ler.</p>
+                    <ul>
+                        <li>Código Limpo - Robert C. Martin</li>
+                        <li>Refatoração - Martin Fowler</li>
+                        <li>Padrões de Projetos - Gang of Four</li>
+                        <li>O Mítico Homem-Mês - Frederick Brooks</li>
+                    </ul>
+                </div>
+                <div class="recurso-card">
+                    <h3>Ferramentas Essenciais</h3>
+                    <p>Conheça as ferramentas que facilitam o desenvolvimento de software moderno.</p>
+                    <ul>
+                        <li>Git - Controle de versão</li>
+                        <li>Docker - Containerização</li>
+                        <li>Jenkins/GitHub Actions - CI/CD</li>
+                        <li>JIRA/Trello - Gestão de projetos</li>
+                        <li>VS Code/IntelliJ - Editores e IDEs</li>
+                    </ul>
+                </div>
+                <div class="recurso-card">
+                    <h3>Comunidades e Fóruns</h3>
+                    <p>Conecte-se com outros desenvolvedores para trocar experiências e conhecimento.</p>
+                    <ul>
+                        <li>Stack Overflow</li>
+                        <li>GitHub</li>
+                        <li>Dev.to</li>
+                        <li>Reddit (r/programming, r/learnprogramming)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/pages/scripts/script.js"></script>
+</body>
+</html>

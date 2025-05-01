@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Aprenda JavaScript - Conceitos e Tutorial</title>
+    <link rel="stylesheet" href="../assets/styles/pages/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#javascript-intro">Introdução</a></li>
+                    <li><a href="#video">Tutorial</a></li>
+                    <li><a href="#exemplos">Exemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>JavaScript: A Linguagem de Programação da Web</h1>
+            <p>Aprenda os fundamentos do JavaScript, uma linguagem de programação dinâmica, orientada a objetos e essencial para o desenvolvimento web moderno.</p>
+            <a href="#javascript-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="javascript-intro" id="javascript-intro">
+        <div class="container">
+            <h2 class="section-title">O que é JavaScript?</h2>
+            <div class="texto-introducao">
+                <p>JavaScript é uma linguagem de programação de alto nível, dinâmica, interpretada e orientada a objetos, desenvolvida inicialmente pela Netscape em 1995. Foi criada por Brendan Eich e originalmente chamada de LiveScript.</p>
+                <p>JavaScript é conhecida como a linguagem de programação da web, sendo uma das tecnologias fundamentais da World Wide Web, junto com HTML e CSS. Ela permite adicionar interatividade às páginas web e executar código no navegador do usuário.</p>
+                <p>Características principais do JavaScript:</p>
+                <ul>
+                    <li>Linguagem interpretada (não precisa ser compilada)</li>
+                    <li>Dinâmica e fracamente tipada</li>
+                    <li>Suporte a programação orientada a objetos, funcional e imperativa</li>
+                    <li>Execução no lado do cliente (navegador) e servidor (Node.js)</li>
+                    <li>Assíncrona e baseada em eventos</li>
+                    <li>Amplo ecossistema de bibliotecas e frameworks</li>
+                </ul>
+                <p>JavaScript é amplamente utilizada no desenvolvimento de aplicações web interativas, single-page applications (SPAs), aplicações móveis híbridas, desenvolvimento back-end com Node.js, jogos para navegador, Progressive Web Apps (PWAs), e muito mais. Sua versatilidade e onipresença nos navegadores a tornam uma linguagem essencial para qualquer desenvolvedor web.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Tutorial em Vídeo</h2>
+            <p>Aprenda JavaScript com este tutorial introdutório:</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/jS4aFq5-91M" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exemplos" id="exemplos">
+        <div class="container">
+            <h2 class="section-title">Exemplos de Código JavaScript</h2>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <h3>Olá Mundo</h3>
+                    <div class="code-block">
+                        <pre>
+// Meu primeiro programa em JavaScript
+console.log("Olá, Mundo!");
+
+// Alternativa usando DOM para exibir no navegador
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.innerHTML += "<h2>Olá, Mundo!</h2>";
+});
+                        </pre>
+                    </div>
+                    <p>Este é o exemplo mais básico de código JavaScript. O método <code>console.log()</code> exibe o texto "Olá, Mundo!" no console do navegador, enquanto a segunda parte mostra como adicionar conteúdo à página web.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Variáveis e Tipos de Dados</h3>
+                    <div class="code-block">
+                        <pre>
+// Variáveis em JavaScript
+// Usando let e const (ES6+)
+let nome = "Maria";    // string
+let idade = 25;       // number
+let altura = 1.65;    // number (não há tipo separado para decimais)
+let estudante = true; // boolean
+const PI = 3.14159;   // constante
+
+// Tipos de dados especiais
+let nulo = null;      // valor nulo explícito
+let indefinido;       // undefined
+let obj = {           // objeto
+    nome: "João",
+    idade: 30
+};
+let numeros = [1, 2, 3]; // array
+
+console.log(`Nome: ${nome}, Idade: ${idade}, Altura: ${altura}m, Estudante: ${estudante}`);
+                        </pre>
+                    </div>
+                    <p>JavaScript é uma linguagem dinamicamente tipada, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O tipo é determinado automaticamente quando o valor é atribuído.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Estruturas de Controle</h3>
+                    <div class="code-block">
+                        <pre>
+// Estrutura condicional (if-else)
+let idade = 18;
+
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+} else {
+    console.log("Você é menor de idade.");
+}
+
+// Operador ternário
+let status = idade >= 18 ? "Maior de idade" : "Menor de idade";
+console.log(status);
+
+// Loop for
+console.log("Contando de 1 a 5:");
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+// Loop for...of (para arrays)
+const frutas = ["maçã", "banana", "laranja"];
+for (const fruta of frutas) {
+    console.log(fruta);
+}
+                        </pre>
+                    </div>
+                    <p>JavaScript oferece diversas estruturas de controle para tomada de decisão e iteração, incluindo condicionais como if-else e switch, e loops como for, while, do-while, além de for...of e for...in para iteração sobre arrays e objetos.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Funções</h3>
+                    <div class="code-block">
+                        <pre>
+// Definindo funções
+// Função tradicional
+function saudacao(nome) {
+    return `Olá, ${nome}! Bem-vindo ao JavaScript!`;
+}
+
+// Arrow function (ES6+)
+const soma = (a, b) => a + b;
+
+// Função com valor padrão
+const multiplicar = (a, b = 1) => a * b;
+
+console.log(saudacao("Carlos"));     // Olá, Carlos! Bem-vindo ao JavaScript!
+console.log(soma(5, 3));             // 8
+console.log(multiplicar(5));         // 5 (usa o valor padrão b=1)
+console.log(multiplicar(5, 2));      // 10
+
+// Funções de ordem superior
+const numeros = [1, 2, 3, 4, 5];
+const dobrados = numeros.map(num => num * 2);
+console.log(dobrados);  // [2, 4, 6, 8, 10]
+                        </pre>
+                    </div>
+                    <p>Em JavaScript, funções são objetos de primeira classe que podem ser atribuídos a variáveis, passados como argumentos e retornados de outras funções. Isso torna JavaScript uma linguagem poderosa para programação funcional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <div class="container">
+            <h2 class="section-title">Recursos para Aprender JavaScript</h2>
+            <div class="recursos-list">
+                <div class="recurso-card">
+                    <h3>MDN Web Docs</h3>
+                    <p>A documentação MDN é uma referência completa e confiável para JavaScript, HTML e CSS.</p>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="btn">Visitar</a>
+                </div>
+                <div class="recurso-card">
+                    <h3>Exercícios Práticos</h3>
+                    <p>Pratique seus conhecimentos com uma série de exercícios progressivos em JavaScript.</p>
+                    <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" class="btn">Começar</a>
+                </div>
+                <!-- <div class="recurso-card">
+                    <h3>Projetos para Iniciantes</h3>
+                    <p>Aprenda construindo projetos reais desde o início até aplicações completas.</p>
+                    <a href="#" class="btn">Explorar</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/pages/scripts/script.js"></script>
+</body>
+</html>
