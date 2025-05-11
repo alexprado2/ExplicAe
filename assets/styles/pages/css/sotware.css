@@ -215,3 +215,437 @@
         font-size: 12px;
     }
 }
+
+
+
+.ciclo-vida {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0056b3;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #0056b3, #00b8d4);
+    border-radius: 2px;
+}
+
+.instrucoes {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background-color: #e8f4f8;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.nav-hint {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+
+/* Timeline do processo */
+.processo-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    position: relative;
+    padding: 0 25px;
+}
+
+.processo-timeline:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    height: 4px;
+    background-color: #dee2e6;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 16.666%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #dee2e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.timeline-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6c757d;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.timeline-item:hover .timeline-icon {
+    transform: scale(1.1);
+    border-color: #0056b3;
+}
+
+.timeline-item:hover .timeline-label {
+    color: #0056b3;
+}
+
+.timeline-item.active .timeline-icon {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+    box-shadow: 0 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.timeline-item.active .timeline-label {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Cards de fase */
+.fase-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: none;
+    animation: fadeIn 0.5s ease;
+    border-top: 5px solid #0056b3;
+}
+
+.fase-card.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fase-header {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fase-header h3 {
+    margin: 0;
+    color: #0056b3;
+    font-size: 1.5rem;
+}
+
+.fase-indicador {
+    background-color: #e8f4f8;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #0056b3;
+}
+
+.navegacao-fases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #f2f7fb;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.nav-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.nav-btn span {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #004494;
+}
+
+.nav-btn:disabled {
+    background-color: #a0c8e7;
+    cursor: not-allowed;
+}
+
+.progress-indicator {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background: linear-gradient(to right, #0056b3, #00b8d4);
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.fase-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fase-descricao {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fase-descricao p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.destaques-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.destaque-item {
+    background-color: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border-left: 3px solid #0056b3;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.destaque-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e8f4f8;
+}
+
+.destaque-item .icone {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.fase-exemplo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.fase-exemplo h4 {
+    color: #495057;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.fase-exemplo h4:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #0056b3, transparent);
+}
+
+.code-block {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    overflow: hidden;
+}
+
+.code-header {
+    background-color: #e8f4f8;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.code-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #495057;
+    font-family: monospace;
+}
+
+.copy-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #6c757d;
+    transition: color 0.3s;
+}
+
+.copy-btn:hover {
+    color: #0056b3;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    color: #212529;
+}
+
+/* Visão geral do ciclo */
+.visao-geral {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visao-geral-btn {
+    background-color: white;
+    border: 2px solid #0056b3;
+    color: #0056b3;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.visao-geral-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .processo-timeline {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .processo-timeline:before {
+        display: none;
+    }
+    
+    .timeline-item {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+    
+    .fase-body {
+        flex-direction: column;
+    }
+    
+    .fase-descricao {
+        padding-right: 0;
+    }
+    
+    .navegacao-fases {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .progress-indicator {
+        width: 100%;
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .destaques-lista {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-item {
+        width: 45%;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .fase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .fase-indicador {
+        align-self: flex-start;
+    }
+}

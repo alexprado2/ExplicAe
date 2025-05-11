@@ -51,422 +51,523 @@
         </div>
     </section>
 
-    <section class="ciclo-vida" id="ciclo-vida">
-        <div class="container">
-            <h2 class="section-title">Ciclo de Vida do Desenvolvimento de Software</h2>
-            
-            <!-- Timeline visual do processo -->
-            <div class="processo-timeline">
-                <div class="timeline-item active" data-target="requisitos">
-                    <div class="timeline-icon">1</div>
-                    <div class="timeline-label">Análise de Requisitos</div>
+   
+<section class="ciclo-vida" id="ciclo-vida">
+    <div class="container">
+        <h2 class="section-title">Ciclo de Vida do Desenvolvimento de Software</h2>
+        
+        <!-- Instruções de navegação -->
+        <div class="instrucoes">
+            <p>Clique em cada fase para ver detalhes ou use as setas de navegação <span class="nav-hint">◀ ▶</span> entre as fases</p>
+        </div>
+        
+        <!-- Timeline visual do processo -->
+        <div class="processo-timeline">
+            <div class="timeline-item active" data-target="requisitos">
+                <div class="timeline-icon">1</div>
+                <div class="timeline-label">Análise de Requisitos</div>
+            </div>
+            <div class="timeline-item" data-target="design">
+                <div class="timeline-icon">2</div>
+                <div class="timeline-label">Design e Arquitetura</div>
+            </div>
+            <div class="timeline-item" data-target="implementacao">
+                <div class="timeline-icon">3</div>
+                <div class="timeline-label">Implementação</div>
+            </div>
+            <div class="timeline-item" data-target="testes">
+                <div class="timeline-icon">4</div>
+                <div class="timeline-label">Testes</div>
+            </div>
+            <div class="timeline-item" data-target="implantacao">
+                <div class="timeline-icon">5</div>
+                <div class="timeline-label">Implantação</div>
+            </div>
+            <div class="timeline-item" data-target="manutencao">
+                <div class="timeline-icon">6</div>
+                <div class="timeline-label">Manutenção</div>
+            </div>
+        </div>
+
+        <!-- Conteúdo detalhado de cada fase -->
+        <div class="fases-conteudo">
+            <!-- Fase 1: Análise de Requisitos -->
+            <div class="fase-card active" id="requisitos">
+                <div class="fase-header">
+                    <h3>Análise de Requisitos</h3>
+                    <div class="fase-indicador">Fase 1 de 6</div>
                 </div>
-                <div class="timeline-item" data-target="design">
-                    <div class="timeline-icon">2</div>
-                    <div class="timeline-label">Design e Arquitetura</div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" disabled><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 16.67%"></div>
+                        </div>
+                        <div class="progress-text">16.67% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="design"><span>▶</span> Próxima</button>
                 </div>
-                <div class="timeline-item" data-target="implementacao">
-                    <div class="timeline-icon">3</div>
-                    <div class="timeline-label">Implementação</div>
-                </div>
-                <div class="timeline-item" data-target="testes">
-                    <div class="timeline-icon">4</div>
-                    <div class="timeline-label">Testes</div>
-                </div>
-                <div class="timeline-item" data-target="implantacao">
-                    <div class="timeline-icon">5</div>
-                    <div class="timeline-label">Implantação</div>
-                </div>
-                <div class="timeline-item" data-target="manutencao">
-                    <div class="timeline-icon">6</div>
-                    <div class="timeline-label">Manutenção</div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>A fase de análise de requisitos envolve coletar, documentar e validar as necessidades dos usuários e stakeholders do projeto. É fundamental para garantir que o software atenda às expectativas do cliente.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">📋</span> Levantamento de requisitos</div>
+                            <div class="destaque-item"><span class="icone">🔍</span> Análise de viabilidade</div>
+                            <div class="destaque-item"><span class="icone">📊</span> Priorização de funcionalidades</div>
+                            <div class="destaque-item"><span class="icone">✅</span> Definição de critérios de aceitação</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de documento de requisitos</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">Requisito.txt</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
+                            </div>
+                            <pre>
+REQUISITO #001: Sistema de Login
+Descrição: O sistema deve permitir que usuários se autentiquem
+Critérios de aceitação:
+- Entrada para e-mail e senha
+- Validação de formato de e-mail
+- Tentativas máximas de login (3)
+- Recuperação de senha
+- Autenticação por dois fatores (opcional)
+Prioridade: Alta
+Stakeholders: Equipe de segurança, usuários finais
+                            </pre>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-            <!-- Conteúdo detalhado de cada fase -->
-            <div class="fases-conteudo">
-                <!-- Fase 1: Análise de Requisitos -->
-                <div class="fase-card active" id="requisitos">
-                    <div class="fase-header">
-                        <h3>Análise de Requisitos</h3>
-                        <div class="fase-indicador">Fase 1 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>A fase de análise de requisitos envolve coletar, documentar e validar as necessidades dos usuários e stakeholders do projeto. É fundamental para garantir que o software atenda às expectativas do cliente.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">📋</span> Levantamento de requisitos</div>
-                                <div class="destaque-item"><span class="icone">🔍</span> Análise de viabilidade</div>
-                                <div class="destaque-item"><span class="icone">📊</span> Priorização de funcionalidades</div>
-                                <div class="destaque-item"><span class="icone">✅</span> Definição de critérios de aceitação</div>
-                            </div>
-                        </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de documento de requisitos</h4>
-                            <div class="code-block">
-                                <pre>
-    REQUISITO #001: Sistema de Login
-    Descrição: O sistema deve permitir que usuários se autentiquem
-    Critérios de aceitação:
-    - Entrada para e-mail e senha
-    - Validação de formato de e-mail
-    - Tentativas máximas de login (3)
-    - Recuperação de senha
-    - Autenticação por dois fatores (opcional)
-    Prioridade: Alta
-    Stakeholders: Equipe de segurança, usuários finais
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
+
+            <!-- Fase 2: Design e Arquitetura -->
+            <div class="fase-card" id="design">
+                <div class="fase-header">
+                    <h3>Design e Arquitetura</h3>
+                    <div class="fase-indicador">Fase 2 de 6</div>
                 </div>
-    
-                <!-- Fase 2: Design e Arquitetura -->
-                <div class="fase-card" id="design">
-                    <div class="fase-header">
-                        <h3>Design e Arquitetura</h3>
-                        <div class="fase-indicador">Fase 2 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>Na fase de design, são definidas a arquitetura do sistema, os componentes, interfaces e estruturas de dados. Decisões tomadas nesta fase afetam diretamente a qualidade, manutenibilidade e escalabilidade do software.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">🏗️</span> Arquitetura de software</div>
-                                <div class="destaque-item"><span class="icone">🔄</span> Padrões de design</div>
-                                <div class="destaque-item"><span class="icone">🖼️</span> Design de interface</div>
-                                <div class="destaque-item"><span class="icone">🗃️</span> Modelagem de dados</div>
-                            </div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" data-target="requisitos"><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 33.33%"></div>
                         </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de padrão de design</h4>
-                            <div class="code-block">
-                                <pre>
-    /* Exemplo de Design Pattern - Singleton */
-    // Garante que uma classe tenha apenas uma instância
-    public class BancoDeDados
+                        <div class="progress-text">33.33% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="implementacao"><span>▶</span> Próxima</button>
+                </div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>Na fase de design, são definidas a arquitetura do sistema, os componentes, interfaces e estruturas de dados. Decisões tomadas nesta fase afetam diretamente a qualidade, manutenibilidade e escalabilidade do software.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">🏗️</span> Arquitetura de software</div>
+                            <div class="destaque-item"><span class="icone">🔄</span> Padrões de design</div>
+                            <div class="destaque-item"><span class="icone">🖼️</span> Design de interface</div>
+                            <div class="destaque-item"><span class="icone">🗃️</span> Modelagem de dados</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de padrão de design</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">Singleton.cs</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
+                            </div>
+                            <pre>
+/* Exemplo de Design Pattern - Singleton */
+// Garante que uma classe tenha apenas uma instância
+public class BancoDeDados
+{
+    private static BancoDeDados _instancia;
+    private string _stringConexao;
+    
+    private BancoDeDados()
     {
-        private static BancoDeDados _instancia;
-        private string _stringConexao;
-        
-        private BancoDeDados()
-        {
-            _stringConexao = "Server=myServerAddress;Database=myDB;";
-        }
-        
-        public static BancoDeDados ObterInstancia()
-        {
-            if (_instancia == null)
-            {
-                _instancia = new BancoDeDados();
-            }
-            return _instancia;
-        }
-        
-        public void Conectar()
-        {
-            // Código para conectar ao banco de dados
-        }
+        _stringConexao = "Server=myServerAddress;Database=myDB;";
     }
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
     
-                <!-- Fase 3: Implementação -->
-                <div class="fase-card" id="implementacao">
-                    <div class="fase-header">
-                        <h3>Implementação</h3>
-                        <div class="fase-indicador">Fase 3 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>A implementação é a fase onde o código é efetivamente escrito com base nas especificações de design. Envolve escolha de linguagens de programação, frameworks e bibliotecas adequadas para o projeto.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">💻</span> Codificação</div>
-                                <div class="destaque-item"><span class="icone">🔧</span> Uso de frameworks</div>
-                                <div class="destaque-item"><span class="icone">📚</span> Integração de bibliotecas</div>
-                                <div class="destaque-item"><span class="icone">🔄</span> Controle de versão</div>
-                            </div>
-                        </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de implementação de funcionalidade</h4>
-                            <div class="code-block">
-                                <pre>
-    // Exemplo de implementação de uma funcionalidade
-    public class GerenciadorDeUsuarios
+    public static BancoDeDados ObterInstancia()
     {
-        private readonly IRepositorioUsuarios _repositorio;
-        private readonly IServicoEmail _servicoEmail;
-        
-        public GerenciadorDeUsuarios(
-            IRepositorioUsuarios repositorio,
-            IServicoEmail servicoEmail)
+        if (_instancia == null)
         {
-            _repositorio = repositorio;
-            _servicoEmail = servicoEmail;
+            _instancia = new BancoDeDados();
         }
-        
-        public async Task<bool> CriarUsuario(UsuarioDto usuario)
-        {
-            // Validação de dados
-            if (string.IsNullOrEmpty(usuario.Email))
-            {
-                throw new ArgumentException("Email é obrigatório");
-            }
-            
-            // Verifica se usuário já existe
-            if (await _repositorio.ExisteUsuarioPorEmail(usuario.Email))
-            {
-                return false;
-            }
-            
-            // Cria usuário no banco
-            var id = await _repositorio.AdicionarUsuario(usuario);
-            
-            // Envia email de boas-vindas
-            await _servicoEmail.EnviarEmailBoasVindas(usuario.Email);
-            
-            return true;
-        }
+        return _instancia;
     }
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
     
-                <!-- Fase 4: Testes -->
-                <div class="fase-card" id="testes">
-                    <div class="fase-header">
-                        <h3>Testes</h3>
-                        <div class="fase-indicador">Fase 4 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>A fase de testes é crucial para garantir a qualidade do software. Inclui testes unitários, integração, sistema e aceitação, visando identificar e corrigir defeitos antes da entrega ao cliente.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">🧪</span> Testes unitários</div>
-                                <div class="destaque-item"><span class="icone">🔄</span> Testes de integração</div>
-                                <div class="destaque-item"><span class="icone">🖥️</span> Testes de sistema</div>
-                                <div class="destaque-item"><span class="icone">👥</span> Testes de aceitação</div>
-                            </div>
-                        </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de teste unitário</h4>
-                            <div class="code-block">
-                                <pre>
-    // Exemplo de teste unitário usando xUnit
-    public class GerenciadorDeUsuariosTests
+    public void Conectar()
     {
-        [Fact]
-        public async Task CriarUsuario_ComEmailInvalido_DeveLancarExcecao()
+        // Código para conectar ao banco de dados
+    }
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 3: Implementação -->
+            <div class="fase-card" id="implementacao">
+                <div class="fase-header">
+                    <h3>Implementação</h3>
+                    <div class="fase-indicador">Fase 3 de 6</div>
+                </div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" data-target="design"><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                        <div class="progress-text">50% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="testes"><span>▶</span> Próxima</button>
+                </div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>A implementação é a fase onde o código é efetivamente escrito com base nas especificações de design. Envolve escolha de linguagens de programação, frameworks e bibliotecas adequadas para o projeto.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">💻</span> Codificação</div>
+                            <div class="destaque-item"><span class="icone">🔧</span> Uso de frameworks</div>
+                            <div class="destaque-item"><span class="icone">📚</span> Integração de bibliotecas</div>
+                            <div class="destaque-item"><span class="icone">🔄</span> Controle de versão</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de implementação de funcionalidade</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">GerenciadorDeUsuarios.cs</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
+                            </div>
+                            <pre>
+// Exemplo de implementação de uma funcionalidade
+public class GerenciadorDeUsuarios
+{
+    private readonly IRepositorioUsuarios _repositorio;
+    private readonly IServicoEmail _servicoEmail;
+    
+    public GerenciadorDeUsuarios(
+        IRepositorioUsuarios repositorio,
+        IServicoEmail servicoEmail)
+    {
+        _repositorio = repositorio;
+        _servicoEmail = servicoEmail;
+    }
+    
+    public async Task<bool> CriarUsuario(UsuarioDto usuario)
+    {
+        // Validação de dados
+        if (string.IsNullOrEmpty(usuario.Email))
         {
-            // Arrange
-            var repositorioMock = new Mock<IRepositorioUsuarios>();
-            var servicoEmailMock = new Mock<IServicoEmail>();
-            var gerenciador = new GerenciadorDeUsuarios(
-                repositorioMock.Object, 
-                servicoEmailMock.Object);
-            
-            var usuarioSemEmail = new UsuarioDto 
-            { 
-                Nome = "Teste",
-                Email = ""
-            };
-            
-            // Act & Assert
-            await Assert.ThrowsAsync<ArgumentException>(
-                async () => await gerenciador.CriarUsuario(usuarioSemEmail)
-            );
+            throw new ArgumentException("Email é obrigatório");
         }
         
-        [Fact]
-        public async Task CriarUsuario_QuandoSucesso_DeveRetornarTrue()
+        // Verifica se usuário já existe
+        if (await _repositorio.ExisteUsuarioPorEmail(usuario.Email))
         {
-            // Arrange
-            var repositorioMock = new Mock<IRepositorioUsuarios>();
-            var servicoEmailMock = new Mock<IServicoEmail>();
-            
-            repositorioMock
-                .Setup(r => r.ExisteUsuarioPorEmail(It.IsAny<string>()))
-                .ReturnsAsync(false);
-                
-            var gerenciador = new GerenciadorDeUsuarios(
-                repositorioMock.Object, 
-                servicoEmailMock.Object);
-            
-            var novoUsuario = new UsuarioDto 
-            { 
-                Nome = "Maria Silva",
-                Email = "maria@exemplo.com"
-            };
-            
-            // Act
-            var resultado = await gerenciador.CriarUsuario(novoUsuario);
-            
-            // Assert
-            Assert.True(resultado);
-            repositorioMock.Verify(
-                r => r.AdicionarUsuario(It.IsAny<UsuarioDto>()), 
-                Times.Once
-            );
-            servicoEmailMock.Verify(
-                s => s.EnviarEmailBoasVindas("maria@exemplo.com"), 
-                Times.Once
-            );
+            return false;
         }
+        
+        // Cria usuário no banco
+        var id = await _repositorio.AdicionarUsuario(usuario);
+        
+        // Envia email de boas-vindas
+        await _servicoEmail.EnviarEmailBoasVindas(usuario.Email);
+        
+        return true;
     }
-                                </pre>
-                            </div>
+}
+                            </pre>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Fase 5: Implantação -->
-                <div class="fase-card" id="implantacao">
-                    <div class="fase-header">
-                        <h3>Implantação</h3>
-                        <div class="fase-indicador">Fase 5 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>A fase de implantação envolve colocar o software em produção, configurar ambientes, migrar dados e treinar usuários finais para a utilização do sistema.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">🚀</span> Deployment em produção</div>
-                                <div class="destaque-item"><span class="icone">⚙️</span> Configuração de ambientes</div>
-                                <div class="destaque-item"><span class="icone">📊</span> Migração de dados</div>
-                                <div class="destaque-item"><span class="icone">👩‍🏫</span> Treinamento de usuários</div>
-                            </div>
+            </div>
+
+            <!-- Fase 4: Testes -->
+            <div class="fase-card" id="testes">
+                <div class="fase-header">
+                    <h3>Testes</h3>
+                    <div class="fase-indicador">Fase 4 de 6</div>
+                </div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" data-target="implementacao"><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 66.67%"></div>
                         </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de script de deploy</h4>
-                            <div class="code-block">
-                                <pre>
-    #!/bin/bash
-    # Script de implantação automatizada
-    
-    echo "Iniciando deploy da versão 2.5.1..."
-    
-    # Backup dos dados
-    echo "Realizando backup do banco de dados..."
-    pg_dump -U postgres -d aplicacao_prod > backup_$(date +%Y%m%d).sql
-    
-    # Parar serviços
-    echo "Parando serviços..."
-    systemctl stop aplicacao-api
-    systemctl stop aplicacao-worker
-    
-    # Atualizar código
-    echo "Atualizando código fonte..."
-    cd /var/www/aplicacao
-    git pull origin main
-    npm install --production
-    
-    # Executar migrações
-    echo "Executando migrações do banco de dados..."
-    npm run migrate:up
-    
-    # Reiniciar serviços
-    echo "Reiniciando serviços..."
-    systemctl start aplicacao-api
-    systemctl start aplicacao-worker
-    
-    echo "Verificando status dos serviços..."
-    systemctl status aplicacao-api | grep Active
-    systemctl status aplicacao-worker | grep Active
-    
-    echo "Deploy concluído com sucesso!"
-                                </pre>
+                        <div class="progress-text">66.67% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="implantacao"><span>▶</span> Próxima</button>
+                </div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>A fase de testes é crucial para garantir a qualidade do software. Inclui testes unitários, integração, sistema e aceitação, visando identificar e corrigir defeitos antes da entrega ao cliente.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">🧪</span> Testes unitários</div>
+                            <div class="destaque-item"><span class="icone">🔄</span> Testes de integração</div>
+                            <div class="destaque-item"><span class="icone">🖥️</span> Testes de sistema</div>
+                            <div class="destaque-item"><span class="icone">👥</span> Testes de aceitação</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de teste unitário</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">GerenciadorDeUsuariosTests.cs</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
                             </div>
+                            <pre>
+// Exemplo de teste unitário usando xUnit
+public class GerenciadorDeUsuariosTests
+{
+    [Fact]
+    public async Task CriarUsuario_ComEmailInvalido_DeveLancarExcecao()
+    {
+        // Arrange
+        var repositorioMock = new Mock<IRepositorioUsuarios>();
+        var servicoEmailMock = new Mock<IServicoEmail>();
+        var gerenciador = new GerenciadorDeUsuarios(
+            repositorioMock.Object, 
+            servicoEmailMock.Object);
+        
+        var usuarioSemEmail = new UsuarioDto 
+        { 
+            Nome = "Teste",
+            Email = ""
+        };
+        
+        // Act & Assert
+        await Assert.ThrowsAsync<ArgumentException>(
+            async () => await gerenciador.CriarUsuario(usuarioSemEmail)
+        );
+    }
+    
+    [Fact]
+    public async Task CriarUsuario_QuandoSucesso_DeveRetornarTrue()
+    {
+        // Arrange
+        var repositorioMock = new Mock<IRepositorioUsuarios>();
+        var servicoEmailMock = new Mock<IServicoEmail>();
+        
+        repositorioMock
+            .Setup(r => r.ExisteUsuarioPorEmail(It.IsAny<string>()))
+            .ReturnsAsync(false);
+            
+        var gerenciador = new GerenciadorDeUsuarios(
+            repositorioMock.Object, 
+            servicoEmailMock.Object);
+        
+        var novoUsuario = new UsuarioDto 
+        { 
+            Nome = "Maria Silva",
+            Email = "maria@exemplo.com"
+        };
+        
+        // Act
+        var resultado = await gerenciador.CriarUsuario(novoUsuario);
+        
+        // Assert
+        Assert.True(resultado);
+        repositorioMock.Verify(
+            r => r.AdicionarUsuario(It.IsAny<UsuarioDto>()), 
+            Times.Once
+        );
+        servicoEmailMock.Verify(
+            s => s.EnviarEmailBoasVindas("maria@exemplo.com"), 
+            Times.Once
+        );
+    }
+}
+                            </pre>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Fase 6: Manutenção -->
-                <div class="fase-card" id="manutencao">
-                    <div class="fase-header">
-                        <h3>Manutenção</h3>
-                        <div class="fase-indicador">Fase 6 de 6</div>
-                    </div>
-                    <div class="fase-body">
-                        <div class="fase-descricao">
-                            <p>A fase de manutenção garante que o software continue funcionando corretamente, seja atualizado com novas funcionalidades e corrigido quando necessário ao longo de seu ciclo de vida.</p>
-                            <div class="destaques-lista">
-                                <div class="destaque-item"><span class="icone">🔧</span> Manutenção corretiva</div>
-                                <div class="destaque-item"><span class="icone">⚡</span> Manutenção preventiva</div>
-                                <div class="destaque-item"><span class="icone">🚀</span> Manutenção evolutiva</div>
-                                <div class="destaque-item"><span class="icone">📊</span> Monitoramento contínuo</div>
-                            </div>
+            </div>
+
+            <!-- Fase 5: Implantação -->
+            <div class="fase-card" id="implantacao">
+                <div class="fase-header">
+                    <h3>Implantação</h3>
+                    <div class="fase-indicador">Fase 5 de 6</div>
+                </div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" data-target="testes"><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 83.33%"></div>
                         </div>
-                        <div class="fase-exemplo">
-                            <h4>Exemplo de log de monitoramento</h4>
-                            <div class="code-block">
-                                <pre>
-    // Configuração de logger para monitoramento de erros
-    const winston = require('winston');
-    const Sentry = require('@sentry/node');
-    
-    // Inicializar Sentry para monitoramento de erros
-    Sentry.init({
-      dsn: "https://ab12c3de45f@sentry.io/98765",
-      environment: process.env.NODE_ENV,
-      tracesSampleRate: 0.5,
+                        <div class="progress-text">83.33% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="manutencao"><span>▶</span> Próxima</button>
+                </div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>A fase de implantação envolve colocar o software em produção, configurar ambientes, migrar dados e treinar usuários finais para a utilização do sistema.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">🚀</span> Deployment em produção</div>
+                            <div class="destaque-item"><span class="icone">⚙️</span> Configuração de ambientes</div>
+                            <div class="destaque-item"><span class="icone">📊</span> Migração de dados</div>
+                            <div class="destaque-item"><span class="icone">👩‍🏫</span> Treinamento de usuários</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de script de deploy</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">deploy.sh</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
+                            </div>
+                            <pre>
+#!/bin/bash
+# Script de implantação automatizada
+
+echo "Iniciando deploy da versão 2.5.1..."
+
+# Backup dos dados
+echo "Realizando backup do banco de dados..."
+pg_dump -U postgres -d aplicacao_prod > backup_$(date +%Y%m%d).sql
+
+# Parar serviços
+echo "Parando serviços..."
+systemctl stop aplicacao-api
+systemctl stop aplicacao-worker
+
+# Atualizar código
+echo "Atualizando código fonte..."
+cd /var/www/aplicacao
+git pull origin main
+npm install --production
+
+# Executar migrações
+echo "Executando migrações do banco de dados..."
+npm run migrate:up
+
+# Reiniciar serviços
+echo "Reiniciando serviços..."
+systemctl start aplicacao-api
+systemctl start aplicacao-worker
+
+echo "Verificando status dos serviços..."
+systemctl status aplicacao-api | grep Active
+systemctl status aplicacao-worker | grep Active
+
+echo "Deploy concluído com sucesso!"
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 6: Manutenção -->
+            <div class="fase-card" id="manutencao">
+                <div class="fase-header">
+                    <h3>Manutenção</h3>
+                    <div class="fase-indicador">Fase 6 de 6</div>
+                </div>
+                <div class="navegacao-fases">
+                    <button class="nav-btn prev" data-target="implantacao"><span>◀</span> Anterior</button>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%"></div>
+                        </div>
+                        <div class="progress-text">100% do ciclo</div>
+                    </div>
+                    <button class="nav-btn next" data-target="requisitos"><span>▶</span> Reiniciar</button>
+                </div>
+                <div class="fase-body">
+                    <div class="fase-descricao">
+                        <p>A fase de manutenção garante que o software continue funcionando corretamente, seja atualizado com novas funcionalidades e corrigido quando necessário ao longo de seu ciclo de vida.</p>
+                        <div class="destaques-lista">
+                            <div class="destaque-item"><span class="icone">🔧</span> Manutenção corretiva</div>
+                            <div class="destaque-item"><span class="icone">⚡</span> Manutenção preventiva</div>
+                            <div class="destaque-item"><span class="icone">🚀</span> Manutenção evolutiva</div>
+                            <div class="destaque-item"><span class="icone">📊</span> Monitoramento contínuo</div>
+                        </div>
+                    </div>
+                    <div class="fase-exemplo">
+                        <h4>Exemplo de log de monitoramento</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">logger.js</span>
+                                <button class="copy-btn" title="Copiar código">📋</button>
+                            </div>
+                            <pre>
+// Configuração de logger para monitoramento de erros
+const winston = require('winston');
+const Sentry = require('@sentry/node');
+
+// Inicializar Sentry para monitoramento de erros
+Sentry.init({
+  dsn: "https://ab12c3de45f@sentry.io/98765",
+  environment: process.env.NODE_ENV,
+  tracesSampleRate: 0.5,
+});
+
+// Configurar logger
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
+  defaultMeta: { service: 'api-users' },
+  transports: [
+    new winston.transports.File({ 
+      filename: 'error.log', 
+      level: 'error' 
+    }),
+    new winston.transports.File({ 
+      filename: 'combined.log' 
+    }),
+  ],
+});
+
+// Monitoramento de API
+app.use((req, res, next) => {
+  const start = Date.now();
+  
+  res.on('finish', () => {
+    const duration = Date.now() - start;
+    logger.info({
+      method: req.method,
+      path: req.path,
+      statusCode: res.statusCode,
+      duration,
     });
     
-    // Configurar logger
-    const logger = winston.createLogger({
-      level: 'info',
-      format: winston.format.combine(
-        winston.format.timestamp(),
-        winston.format.json()
-      ),
-      defaultMeta: { service: 'api-users' },
-      transports: [
-        new winston.transports.File({ 
-          filename: 'error.log', 
-          level: 'error' 
-        }),
-        new winston.transports.File({ 
-          filename: 'combined.log' 
-        }),
-      ],
-    });
-    
-    // Monitoramento de API
-    app.use((req, res, next) => {
-      const start = Date.now();
-      
-      res.on('finish', () => {
-        const duration = Date.now() - start;
-        logger.info({
-          method: req.method,
-          path: req.path,
-          statusCode: res.statusCode,
-          duration,
-        });
-        
-        // Alertar sobre respostas lentas
-        if (duration > 1000) {
-          logger.warn({
-            message: 'Resposta lenta detectada',
-            method: req.method,
-            path: req.path,
-            duration,
-          });
-        }
+    // Alertar sobre respostas lentas
+    if (duration > 1000) {
+      logger.warn({
+        message: 'Resposta lenta detectada',
+        method: req.method,
+        path: req.path,
+        duration,
       });
-      
-      next();
-    });
-                                </pre>
-                            </div>
+    }
+  });
+  
+  next();
+});
+                            </pre>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Visão geral do ciclo -->
+        <div class="visao-geral">
+            <button class="visao-geral-btn">Ver visão geral do ciclo completo</button>
+        </div>
+    </div>
+</section>
+            
+            <!-- Visão geral do ciclo -->
+            <div class="visao-geral">
+                <button class="visao-geral-btn">Ver visão geral do ciclo completo</button>
+            </div>
+        </div>
     
     <section class="metodologias" id="metodologias">
         <div class="container">
@@ -519,7 +620,7 @@
         </div>
     </section>
 
-    <section class="video-section" id="video">
+    <!-- <section class="video-section" id="video">
         <div class="container">
             <h2 class="section-title">Tutorial em Vídeo</h2>
             <p>Aprenda sobre o processo de desenvolvimento de software neste vídeo introdutório:</p>
@@ -534,7 +635,7 @@
                 </iframe>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="recursos" id="recursos">
