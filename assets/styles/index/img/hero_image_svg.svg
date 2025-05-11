@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo com gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edf2fd" />
+      <stop offset="100%" stop-color="#d4e0ff" />
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b5bdb" />
+      <stop offset="100%" stop-color="#4b6fff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Formas de fundo -->
+  <circle cx="650" cy="100" r="80" fill="#ff6b6b" opacity="0.1" />
+  <circle cx="150" cy="500" r="120" fill="#38b2ac" opacity="0.1" />
+  <circle cx="700" cy="450" r="60" fill="#4b6fff" opacity="0.1" />
+  
+  <!-- Computador/Laptop -->
+  <g transform="translate(300, 230)">
+    <!-- Base do laptop -->
+    <rect x="0" y="150" width="320" height="20" rx="10" fill="#2d3748" />
+    
+    <!-- Corpo do laptop -->
+    <rect x="20" y="0" width="280" height="150" rx="10" fill="#2d3748" />
+    <rect x="30" y="10" width="260" height="130" rx="5" fill="url(#screenGradient)" />
+    
+    <!-- Código na tela -->
+    <text x="50" y="40" font-family="monospace" font-size="12" fill="white">&lt;html&gt;</text>
+    <text x="70" y="60" font-family="monospace" font-size="12" fill="white">&lt;head&gt;</text>
+    <text x="90" y="80" font-family="monospace" font-size="12" fill="white">&lt;title&gt;ExplicAe&lt;/title&gt;</text>
+    <text x="70" y="100" font-family="monospace" font-size="12" fill="white">&lt;/head&gt;</text>
+    <text x="50" y="120" font-family="monospace" font-size="12" fill="white">&lt;/html&gt;</text>
+  </g>
+  
+  <!-- Ícones flutuantes -->
+  <!-- Ícone de código -->
+  <g transform="translate(180, 160)">
+    <circle cx="0" cy="0" r="35" fill="white" />
+    <text x="-20" y="8" font-family="monospace" font-size="30" fill="#4b6fff">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Ícone de banco de dados -->
+  <g transform="translate(500, 150)">
+    <circle cx="0" cy="0" r="30" fill="white" />
+    <path d="M-15,-15 L15,-15 L15,0 C15,10 -15,10 -15,0 Z" fill="#ff6b6b" />
+    <path d="M-15,0 L15,0 L15,15 C15,25 -15,25 -15,15 Z" fill="#ff6b6b" opacity="0.7" />
+  </g>
+  
+  <!-- Ícone de nuvem -->
+  <g transform="translate(220, 320)">
+    <circle cx="0" cy="0" r="28" fill="white" />
+    <path d="M-10,-5 A10,10 0 0,1 0,-15 A10,10 0 0,1 10,-5 A8,8 0 0,1 18,3 A8,8 0 0,1 10,11 L-10,11 A8,8 0 0,1 -18,3 A8,8 0 0,1 -10,-5 Z" fill="#38b2ac" />
+  </g>
+  
+  <!-- Ícone de engrenagem -->
+  <g transform="translate(540, 350)">
+    <circle cx="0" cy="0" r="25" fill="white" />
+    <g transform="rotate(0)">
+      <circle cx="0" cy="0" r="10" fill="#4b6fff" />
+      <g>
+        <rect x="-2" y="-18" width="4" height="8" fill="#4b6fff" />
+        <rect x="-2" y="10" width="4" height="8" fill="#4b6fff" />
+        <rect x="-18" y="-2" width="8" height="4" fill="#4b6fff" />
+        <rect x="10" y="-2" width="8" height="4" fill="#4b6fff" />
+        <rect x="-14" y="-14" width="6" height="6" transform="rotate(45)" fill="#4b6fff" />
+        <rect x="-14" y="8" width="6" height="6" transform="rotate(45)" fill="#4b6fff" />
+        <rect x="8" y="-14" width="6" height="6" transform="rotate(45)" fill="#4b6fff" />
+        <rect x="8" y="8" width="6" height="6" transform="rotate(45)" fill="#4b6fff" />
+      </g>
+    </g>
+  </g>
+  
+  <!-- Linhas de conexão -->
+  <line x1="215" y1="160" x2="300" y2="230" stroke="#4b6fff" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="500" y1="150" x2="450" y2="230" stroke="#4b6fff" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="220" y1="320" x2="300" y2="300" stroke="#4b6fff" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="540" y1="350" x2="450" y2="300" stroke="#4b6fff" stroke-width="2" stroke-dasharray="5,5" />
+</svg>
