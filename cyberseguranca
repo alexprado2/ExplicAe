@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplicAe - Aprenda o que é a Cybersegurança </title>
+    <link rel="stylesheet" href="../assets/styles/pages/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ExplicAe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#IoT-intro">Introdução</a></li>
+                    <li><a href="#video">conceitos</a></li>
+                    <li><a href="#exemplos">Exemplos</a></li>
+                    <li><a href="#conclusao">conclusão</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>A Cybersegurança </h1>
+            <p>Aprenda o que é a Cybersegurança e como ela nos protege</p>
+            <a href="#IoT-intro" class="btn">Começar a Aprender</a>
+        </div>
+    </section>
+
+    <section class="IoT-intro" id="IoT-intro">
+        <div class="container">
+            <h1 class="section-title">O que Cybersegurança?</h1>
+            <div class="texto-introducao">
+                <p>Cibersegurança é o conjunto de práticas, tecnologias e processos utilizados para proteger sistemas, redes, dispositivos e dados contra ataques digitais. 
+                Seu objetivo é garantir a confidencialidade, integridade e disponibilidade das informações, prevenindo acessos não autorizados, danos e interrupções nos serviços. 
+                Em um mundo cada vez mais conectado, a cibersegurança atua como uma barreira essencial para manter a segurança no ambiente digital.</p>
+            
+                <p>Nunca estivemos tão expostos a ameaças digitais. Em casa, no trabalho ou na rua, utilizamos redes e dispositivos que podem ser alvo de cibercriminosos. 
+                Com a expansão da Internet das Coisas, do 5G e da computação em nuvem, a proteção dos dados tornou-se um desafio ainda maior. 
+                A cibersegurança, portanto, é fundamental para garantir que toda essa conectividade ocorra de forma segura e confiável.</p>
+            
+                <p>Com o crescimento acelerado das tecnologias digitais, cresce também a importância da cibersegurança. Governos, empresas e indivíduos precisam adotar medidas preventivas 
+                para evitar perdas financeiras, vazamentos de dados e interrupções de serviços. Investir em cibersegurança é investir na continuidade e na confiança no mundo digital.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <h1 class="section-title">historia em Vídeo</h1>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/shorts/pSvzmUVK8OI" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exemplos" id="exemplos">
+        <div class="container">
+            <h2 class="section-title">Exemplos de cybersegurança no Cotidiano</h2>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <div class="code-block">                    
+                        <ul>
+                            <li>Autenticação em dois fatores: proteção extra em contas de e-mail, redes sociais e bancos.</li>
+                            <li>Antivírus e firewalls: usados em computadores e celulares para bloquear ameaças digitais.</li>
+                            <li>Atualizações automáticas: corrigem falhas de segurança em sistemas operacionais e aplicativos.</li>
+                            <li>Criptografia de dados: garante a privacidade em mensagens, chamadas e transações financeiras.</li>
+                            <li>Redes Wi-Fi seguras: roteadores com senhas fortes e configurações de segurança ativadas.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Cybersegurança nas empresas</h3>
+                    <div class="code-block">
+                        <ul>
+                            <li>Proteção de redes corporativas contra invasões e malwares.</li>
+                            <li>Controle de acesso a sistemas e dados sensíveis por meio de autenticação forte.</li>
+                            <li>Políticas de backup e recuperação de dados para evitar perdas causadas por ataques.</li>
+                        </ul>
+                    </div>
+                    <p>A cibersegurança empresarial é essencial para manter a continuidade dos negócios. 
+                    Com sistemas cada vez mais conectados, proteger dados, máquinas e processos se tornou prioridade. 
+                    Soluções de segurança digital ajudam a prevenir fraudes, espionagem industrial e paralisações causadas por ataques virtuais.</p>
+                    </div>
+                    <div class="exemplo-card">
+                        <h3>Cibersegurança na Saúde</h3>
+                        <div class="code-block">
+                            <ul>
+                                <li>Proteção de dados de pacientes contra vazamentos e acessos indevidos.</li>
+                                <li>Segurança em sistemas de prontuários eletrônicos e agendamentos.</li>
+                                <li>Defesa contra ataques a equipamentos médicos conectados à rede.</li>
+                            </ul>
+                        </div>
+                    
+                        <p>A cibersegurança protege vidas – literalmente. 
+                            Sistemas hospitalares seguros evitam vazamentos de dados sensíveis e ataques que poderiam paralisar atendimentos. 
+                            Em um ambiente digital confiável, médicos podem acessar informações críticas com segurança e precisão.</p>
+                            </div>
+                            <div class="exemplo-card">
+                                <h3>Cibersegurança no Agronegócio</h3>
+                                <div class="code-block">
+                                    <ul>
+                                        <li>Proteção de dados coletados por sensores e drones contra acessos indevidos.</li>
+                                        <li>Segurança em sistemas de monitoramento e automação no campo.</li>
+                                        <li>Prevenção de ataques que possam afetar a produção ou sabotagem digital de máquinas agrícolas.</li>
+                                    </ul>
+                                </div>
+                                <p>No campo, a cibersegurança garante que tecnologias digitais funcionem sem interrupções ou riscos. 
+                                Proteger os dados e os equipamentos conectados é essencial para manter a produtividade e a competitividade no agronegócio.</p>
+                            
+                </div>
+                <div class="exemplo-card">
+                    <h3>Vantagens da Cibersegurança</h3>
+                    <div class="code-block">
+                        <ul>
+                            <li>Proteção contra vazamento de dados sensíveis</li>
+                            <li>Redução de riscos de ataques cibernéticos</li>
+                            <li>Confiança e credibilidade para empresas e usuários</li>
+                            <li>Continuidade dos serviços e operações críticas</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Desvantagens da Cibersegurança</h3>
+                    <ul>
+                        <li>Alto custo de implementação e manutenção</li>
+                        <li>Necessidade constante de atualização e monitoramento</li>
+                        <li>Complexidade na gestão de sistemas e acessos</li>
+                        <li>Possíveis restrições à usabilidade se mal implementada</li>
+                    </ul>
+                </div>
+                
+                <div class="exemplo-card">
+                    <h3>Conclusão</h3>
+                    <div class="code-block">
+                        <p>A cibersegurança é um pilar essencial do mundo digital. Em um cenário cada vez mais conectado, proteger dados, sistemas e pessoas contra ameaças virtuais não é apenas uma escolha — é uma necessidade. 
+                        Seja em empresas, hospitais, escolas ou na vida pessoal, investir em segurança digital é garantir confiança, privacidade e continuidade. 
+                        Mas, assim como a tecnologia avança, a cibersegurança também deve evoluir com ética, responsabilidade e atenção constante.</p>
+                    </div>
+                </div>
+                
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <h3>ExplicAe</h3>
+            <p>Seu portal para o mundo da tecnologia da informação</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <p>&copy; 2025 ExplicAe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../assets/styles/phyton/scripts/script.js"></script>
+</body>
+</html>
